@@ -66,7 +66,7 @@ ASSETS = [
     {"id": "GCF",    "yahoo": "GC=F",     "name": "Oro",            "cat": "commodities","currency": "USD"},
     {"id": "CLF",    "yahoo": "CL=F",     "name": "Petróleo WTI",   "cat": "commodities","currency": "USD"},
     {"id": "SIF",    "yahoo": "SI=F",     "name": "Plata",          "cat": "commodities","currency": "USD"},
-    {"id": "COP",    "yahoo": "HG=F",     "name": "Cobre",           "cat": "commoditines","currency": "USD"},
+    {"id": "COP",    "yahoo": "HG=F",     "name": "Cobre",          "cat": "commodities","currency": "USD"},
     # Forex
     {"id": "CLPX",   "yahoo": "CLP=X",   "name": "USD/CLP",        "cat": "forex",      "currency": "CLP"},
     {"id": "EURUSD", "yahoo": "EURUSD=X", "name": "EUR/USD",        "cat": "forex",      "currency": "USD"},
