@@ -2,7 +2,7 @@
   "id": "COP",
   "symbol": "HG=F",
   "name": "Cobre",
-  "category": "commoditines",
+  "category": "commodities",
   "currency": "USD",
   "history": [
     {
@@ -2026,8 +2026,8 @@
       "open": 6.486,
       "high": 6.5375,
       "low": 6.425,
-      "close": 6.5115,
-      "volume": 38850
+      "close": 6.506,
+      "volume": 39257
     }
   ]
 }
