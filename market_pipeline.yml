@@ -1,0 +1,63 @@
+name: 📊 Market Data Pipeline
+
+on:
+  # ── Ejecución automática: lunes a viernes a las 20:00 UTC (17:00 Santiago) ──
+  schedule:
+    - cron: '0 20 * * 1-5'
+
+  # ── Ejecución manual desde la pestaña Actions de GitHub ──
+  workflow_dispatch:
+    inputs:
+      period:
+        description: 'Período histórico (1mo, 3mo, 6mo, 1y)'
+        required: false
+        default: '3mo'
+
+# ── Permisos necesarios para hacer push al repo ──
+permissions:
+  contents: write
+
+jobs:
+  update-market-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      # 1. Checkout del repositorio
+      - name: 📥 Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # 2. Configurar Python 3.12
+      - name: 🐍 Setup Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      # 3. Instalar dependencias (cacheadas si requirements.txt no cambió)
+      - name: 📦 Install dependencies
+        run: pip install -r requirements.txt
+
+      # 4. Extraer datos de mercado y generar JSON
+      - name: 🔄 Run market data pipeline
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}   # opcional: reg. gratis en stlouisfed.org
+          PIPELINE_PERIOD: ${{ github.event.inputs.period || '3mo' }}
+        run: python pipeline_gh.py
+
+      # 5. Commit y push de los JSON generados
+      - name: 💾 Commit updated data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/
+          # Solo commitea si hay cambios reales
+          git diff --staged --quiet || git commit -m "📊 Market update — $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
+
+      # 6. (Opcional) Notificar si el pipeline falla
+      - name: 🚨 Notify on failure
+        if: failure()
+        run: echo "Pipeline falló — revisar logs en Actions"
