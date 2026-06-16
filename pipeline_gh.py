@@ -18,6 +18,22 @@ from pathlib import Path
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).parent))
+
+
+class _NumpyEncoder(json.JSONEncoder):
+    """Convierte tipos numpy/pandas a tipos nativos de Python antes de serializar."""
+    def default(self, obj):
+        import numpy as np
+        if isinstance(obj, np.integer):
+            return int(obj)
+        if isinstance(obj, np.floating):
+            return float(obj)
+        if isinstance(obj, np.ndarray):
+            return obj.tolist()
+        if isinstance(obj, pd.Timestamp):
+            return obj.isoformat()
+        return super().default(obj)
+
 from extractors.yahoo import YahooFinanceExtractor
 
 logging.basicConfig(
@@ -125,7 +141,7 @@ def save_history(asset_id: str, asset_meta: dict, df: pd.DataFrame):
         "currency": asset_meta["currency"],
         "history":  df.to_dict(orient="records"),
     }
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2, cls=_NumpyEncoder), encoding="utf-8")
     logger.info(f"  Guardado {path.name}  ({len(df)} puntos)")
 
 
@@ -136,7 +152,7 @@ def save_latest(asset_summaries: list[dict]):
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "assets": asset_summaries,
     }
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2, cls=_NumpyEncoder), encoding="utf-8")
     logger.info(f"Guardado latest.json — {len(asset_summaries)} activos")
 
 
