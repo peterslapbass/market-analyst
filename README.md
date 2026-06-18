@@ -2,7 +2,7 @@
 
 Dashboard de datos de mercado actualizado automáticamente con GitHub Actions y publicado en GitHub Pages.
 
-> **Demo:** `[https://TU_USUARIO.github.io/NOMBRE_DEL_REPO/](https://peterslapbass.github.io/market-analyst/)`
+> **Demo:** `https://peterslapbass.github.io/market-analyst/`
 
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-Automático-2088FF?logo=github-actions&logoColor=white)
 ![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Publicado-222?logo=github&logoColor=white)
