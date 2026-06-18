@@ -1,4 +1,4 @@
-# 📊 Market Pulse
+# 📊 Market Analyst
 
 Dashboard de datos de mercado actualizado automáticamente con GitHub Actions y publicado en GitHub Pages.
 
@@ -62,8 +62,8 @@ Dashboard de datos de mercado actualizado automáticamente con GitHub Actions y 
 ### 1. Clonar y subir a GitHub
 
 ```bash
-git clone https://github.com/TU_USUARIO/market-pulse.git
-cd market-pulse
+git clone https://github.com/TU_USUARIO/market-Analyst.git
+cd market-Analyst
 git push -u origin main
 ```
 
