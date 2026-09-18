@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T22:28:42Z",
+  "updated_at": "2026-09-18T21:58:31Z",
   "assets": [
     {
       "id": "GSPC",
@@ -7,11 +7,11 @@
       "name": "S&P 500",
       "category": "indices",
       "currency": "USD",
-      "close": 7637.7598,
-      "change": 85.9497,
-      "change_pct": 1.1381,
-      "date": "2026-09-17",
-      "volume": 2887250000
+      "close": 7650.5,
+      "change": 12.7402,
+      "change_pct": 0.1668,
+      "date": "2026-09-18",
+      "volume": 6050102000
     },
     {
       "id": "IXIC",
@@ -19,11 +19,11 @@
       "name": "NASDAQ",
       "category": "indices",
       "currency": "USD",
-      "close": 26418.2988,
-      "change": 439.8691,
-      "change_pct": 1.6932,
-      "date": "2026-09-17",
-      "volume": 9127066000
+      "close": 26522.5449,
+      "change": 104.2441,
+      "change_pct": 0.3946,
+      "date": "2026-09-18",
+      "volume": 12789451000
     },
     {
       "id": "DJI",
@@ -31,11 +31,11 @@
       "name": "Dow Jones",
       "category": "indices",
       "currency": "USD",
-      "close": 51778.0391,
-      "change": 316.1407,
-      "change_pct": 0.6143,
-      "date": "2026-09-17",
-      "volume": 406102188
+      "close": 51682.6406,
+      "change": -95.3985,
+      "change_pct": -0.1842,
+      "date": "2026-09-18",
+      "volume": 858494006
     },
     {
       "id": "IPSA",
@@ -55,10 +55,10 @@
       "name": "Bovespa",
       "category": "indices",
       "currency": "BRL",
-      "close": 185992.0312,
-      "change": 444.0312,
-      "change_pct": 0.2393,
-      "date": "2026-09-17",
+      "close": 185229.1719,
+      "change": -762.8281,
+      "change_pct": -0.4101,
+      "date": "2026-09-18",
       "volume": 0
     },
     {
@@ -67,11 +67,11 @@
       "name": "Apple",
       "category": "stocks",
       "currency": "USD",
-      "close": 337.0,
-      "change": 4.59,
-      "change_pct": 1.3808,
-      "date": "2026-09-17",
-      "volume": 36423997
+      "close": 336.13,
+      "change": -0.87,
+      "change_pct": -0.2582,
+      "date": "2026-09-18",
+      "volume": 86241049
     },
     {
       "id": "MSFT",
@@ -79,11 +79,11 @@
       "name": "Microsoft",
       "category": "stocks",
       "currency": "USD",
-      "close": 497.75,
-      "change": 7.45,
-      "change_pct": 1.5195,
-      "date": "2026-09-17",
-      "volume": 17779010
+      "close": 493.78,
+      "change": -3.97,
+      "change_pct": -0.7976,
+      "date": "2026-09-18",
+      "volume": 39356144
     },
     {
       "id": "NVDA",
@@ -91,11 +91,11 @@
       "name": "NVIDIA",
       "category": "stocks",
       "currency": "USD",
-      "close": 219.34,
-      "change": 5.44,
-      "change_pct": 2.5432,
-      "date": "2026-09-17",
-      "volume": 92845751
+      "close": 222.27,
+      "change": 2.93,
+      "change_pct": 1.3358,
+      "date": "2026-09-18",
+      "volume": 188794542
     },
     {
       "id": "GOOGL",
@@ -103,11 +103,11 @@
       "name": "Alphabet",
       "category": "stocks",
       "currency": "USD",
-      "close": 347.33,
-      "change": 4.46,
-      "change_pct": 1.3008,
-      "date": "2026-09-17",
-      "volume": 19151604
+      "close": 349.54,
+      "change": 2.21,
+      "change_pct": 0.6363,
+      "date": "2026-09-18",
+      "volume": 47459444
     },
     {
       "id": "AMZN",
@@ -115,11 +115,11 @@
       "name": "Amazon",
       "category": "stocks",
       "currency": "USD",
-      "close": 251.19,
-      "change": 5.23,
-      "change_pct": 2.1264,
-      "date": "2026-09-17",
-      "volume": 29639613
+      "close": 253.71,
+      "change": 2.52,
+      "change_pct": 1.0032,
+      "date": "2026-09-18",
+      "volume": 52017136
     },
     {
       "id": "BTC",
@@ -127,11 +127,11 @@
       "name": "Bitcoin",
       "category": "crypto",
       "currency": "USD",
-      "close": 76208.6484,
-      "change": 58.3281,
-      "change_pct": 0.0766,
-      "date": "2026-09-17",
-      "volume": 22317158400
+      "close": 81230.8984,
+      "change": 4827.125,
+      "change_pct": 6.3179,
+      "date": "2026-09-18",
+      "volume": 39839686656
     },
     {
       "id": "ETH",
@@ -139,11 +139,11 @@
       "name": "Ethereum",
       "category": "crypto",
       "currency": "USD",
-      "close": 2437.1799,
-      "change": 21.06,
-      "change_pct": 0.8716,
-      "date": "2026-09-17",
-      "volume": 11832140800
+      "close": 2626.3601,
+      "change": 179.2534,
+      "change_pct": 7.3251,
+      "date": "2026-09-18",
+      "volume": 21959163904
     },
     {
       "id": "SOL",
@@ -151,11 +151,11 @@
       "name": "Solana",
       "category": "crypto",
       "currency": "USD",
-      "close": 100.88,
-      "change": 2.2381,
-      "change_pct": 2.2689,
-      "date": "2026-09-17",
-      "volume": 2954261504
+      "close": 113.2,
+      "change": 11.5966,
+      "change_pct": 11.4136,
+      "date": "2026-09-18",
+      "volume": 6425040384
     },
     {
       "id": "GCF",
@@ -163,11 +163,11 @@
       "name": "Oro",
       "category": "commodities",
       "currency": "USD",
-      "close": 4381.1001,
-      "change": -6.3999,
-      "change_pct": -0.1459,
-      "date": "2026-09-17",
-      "volume": 582
+      "close": 4415.8999,
+      "change": 16.1997,
+      "change_pct": 0.3682,
+      "date": "2026-09-18",
+      "volume": 138899
     },
     {
       "id": "CLF",
@@ -175,11 +175,11 @@
       "name": "Petróleo WTI",
       "category": "commodities",
       "currency": "USD",
-      "close": 101.1,
-      "change": -1.33,
-      "change_pct": -1.2984,
-      "date": "2026-09-17",
-      "volume": 247
+      "close": 95.47,
+      "change": -6.44,
+      "change_pct": -6.3193,
+      "date": "2026-09-18",
+      "volume": 300567
     },
     {
       "id": "SIF",
@@ -187,11 +187,11 @@
       "name": "Plata",
       "category": "commodities",
       "currency": "USD",
-      "close": 65.805,
-      "change": 1.517,
-      "change_pct": 2.3597,
-      "date": "2026-09-17",
-      "volume": 166
+      "close": 66.785,
+      "change": 1.315,
+      "change_pct": 2.0086,
+      "date": "2026-09-18",
+      "volume": 43186
     },
     {
       "id": "COP",
@@ -199,11 +199,11 @@
       "name": "Cobre",
       "category": "commodities",
       "currency": "USD",
-      "close": 6.6155,
-      "change": 0.184,
-      "change_pct": 2.8609,
-      "date": "2026-09-17",
-      "volume": 70
+      "close": 6.7155,
+      "change": 0.129,
+      "change_pct": 1.9586,
+      "date": "2026-09-18",
+      "volume": 32909
     },
     {
       "id": "CLPX",
@@ -211,10 +211,10 @@
       "name": "USD/CLP",
       "category": "forex",
       "currency": "CLP",
-      "close": 960.65,
-      "change": 7.07,
-      "change_pct": 0.7414,
-      "date": "2026-09-17",
+      "close": 959.0,
+      "change": 4.92,
+      "change_pct": 0.5157,
+      "date": "2026-09-18",
       "volume": 0
     },
     {
@@ -223,10 +223,10 @@
       "name": "EUR/USD",
       "category": "forex",
       "currency": "USD",
-      "close": 1.148,
-      "change": -0.0058,
-      "change_pct": -0.5027,
-      "date": "2026-09-17",
+      "close": 1.1489,
+      "change": 0.0019,
+      "change_pct": 0.1656,
+      "date": "2026-09-18",
       "volume": 0
     },
     {
@@ -235,10 +235,10 @@
       "name": "USD/BRL",
       "category": "forex",
       "currency": "BRL",
-      "close": 5.1244,
-      "change": -0.0185,
-      "change_pct": -0.3597,
-      "date": "2026-09-17",
+      "close": 5.1434,
+      "change": -0.0075,
+      "change_pct": -0.1456,
+      "date": "2026-09-18",
       "volume": 0
     }
   ]
